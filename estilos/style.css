@@ -1,0 +1,193 @@
+@font-face {
+    font-family: "Early";
+    src: url("/fontes/Early\ GameBoy.ttf");
+}
+
+/* Corpo */
+
+*{
+    margin: 0;
+    padding: 0%;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    background-color: #212529;
+}
+
+/* Area Central */
+.corpo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+
+.icon{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 250px;
+}
+
+.Conteudo{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.botoes{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+
+/* Titulo e Subtitulo */
+
+h1{
+    text-transform: uppercase;
+    text-align: center;
+    font-family: "Early";
+    font-size: 25px;
+    font-weight: 900;
+    color: #d90429;
+}
+
+p{
+    text-transform: uppercase;
+    text-decoration:overline;
+    text-align: center;
+    font-family: "Early";
+    font-weight: 900;
+    color: #d90429;
+}
+
+/* Botão */
+.btn {
+    width: 470px;
+    justify-content: center;
+    height: 60px;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-left: 10px;
+    background: transparent;
+    border: 1px solid #fff;
+    outline: none;
+    transition: 0.5s ease-in-out;
+}
+
+.btn:hover {
+    transition: 0.5s ease-in-out;
+    background: #fff;
+}
+
+.btn span {
+    font-family: "Early";
+    font-size: 15px;
+    color: #d90429;
+    font-weight: 100;
+    text-decoration: none;
+}
+
+.rodape{
+    display: flex;
+    justify-content: center;
+}
+
+i{
+    color: #fff;
+    width: 50px;
+    padding: 10px;
+}
+/* Area Mobile */
+
+@media only screen and (max-width: 1080px) {
+    
+    body{
+        margin-top: 20px;
+        width: 100%;
+    }
+
+    .icon{
+        width: 200px;
+    }
+    
+    .Conteudo{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+        
+    h1{
+        text-transform: uppercase;
+        text-align: center;
+        font-family: "Early";
+        font-size: 18px;
+        color: #d90429;
+    }
+
+    p{
+        padding: 0;
+        margin-bottom: 10px;
+        text-transform: uppercase;
+        text-decoration:overline;
+        text-align: center;
+        font-family: "Early";
+        font-size: 12px;
+        color: #d90429;
+    }
+
+    /* Botão */
+    .btn {
+        justify-content: center;
+        align-items: center;
+        width: 95%;
+        height: 60px;
+        margin: 7px;
+        cursor: pointer;
+        background: transparent;
+        border: 1px solid #fff;
+        outline: none;
+        transition: 0.5s ease-in-out;
+    }
+
+    .btn:hover {
+        transition: 0.5s ease-in-out;
+        background: #fff;
+    }
+
+    .btn span {
+        font-family: "Early";
+        font-size: 15px;
+        color: #d90429;
+        font-weight: 100;
+        text-decoration: none;
+    }
+   
+    .botoes{
+        width: 100%;
+        display: flex;
+        margin-top: 15px;
+        flex-direction: column;
+        margin-bottom: 15px;
+    }
+
+    i{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        color: #fff;
+        bottom: 0%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    footer{
+       display: flex;
+       flex-direction: row;
+        padding-top: 40px;
+    }
+}

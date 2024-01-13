@@ -1,0 +1,66 @@
+@font-face {
+    font-family: "Early";
+    src: url("/fontes/Early\ GameBoy.ttf");
+}
+
+/* Corpo */
+
+*{
+    margin: 0;
+    padding: 0%;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    background-color: #212529;
+}
+
+/* Area Central */
+.corpo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+
+.icon{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 250px;
+}
+
+.Conteudo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+h1{
+    color: #d90429;
+    text-align: center;
+}
+/* Area Mobile */
+
+@media only screen and (max-width: 1080px) {
+
+    body{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .icon{
+        margin-top: 20px;
+        margin-bottom: 20px;
+        width: 150px;
+    }
+    
+    .Conteudo{
+        display: flex;
+        justify-content: center;
+    }
+}
